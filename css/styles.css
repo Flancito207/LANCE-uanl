@@ -1,0 +1,74 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.nav-custom {
+  position: relative;
+  color: #000;
+  transition: color 0.3s;
+}
+.nav-custom:hover,
+.nav-custom.active {
+  color: #007BFF;
+}
+.nav-custom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #007BFF;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: bottom right;
+}
+.nav-custom:hover::after,
+.nav-custom.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.info-box {
+  border: 2px solid #007BFF;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  transition: transform 0.2s ease;
+}
+.info-box:hover {
+  transform: translateY(-5px);
+  background-color: #eef6ff;
+}
+
+.btn-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 50%;
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+  z-index: 1000;
+}
+.btn-to-top:hover {
+  background-color: #0056b3;
+}
+
+.chart-box {
+  height: 300px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  border: 2px solid #007BFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+.chart-box:hover {
+  transform: scale(1.05);
+  background-color: #eef6ff;
+}
