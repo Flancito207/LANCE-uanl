@@ -1,7 +1,10 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
 }
 
+body, p, a {
+  font-family: 'Lato', sans-serif;
+}
 .nav-custom {
   position: relative;
   color: #000;
