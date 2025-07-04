@@ -86,3 +86,9 @@ body {
   transform: scale(1.05);
   background-color: #eef6ff;
 }
+
+@media (max-width: 576px) {
+  .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+}
