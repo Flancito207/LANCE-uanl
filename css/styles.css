@@ -38,6 +38,7 @@ body {
   border-radius: 12px;
   background-color: #f9f9f9;
   transition: transform 0.2s ease;
+  min-height: 160px;
 }
 .info-box:hover {
   transform: translateY(-5px);
