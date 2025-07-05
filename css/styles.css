@@ -87,11 +87,11 @@ body {
   transform: scale(1.05);
   background-color: #eef6ff;
 }
-
+/* pongo este comentario como extra*/
 @media (max-width: 576px) {
   .navbar-nav .nav-link {
     font-size: 14px;     /* Aumenta el tamaño del texto en móviles */
-    padding: 0.4rem 0.6rem; /* Opcional: más espacio si se ve apretado */
+    padding: 0.4rem 0.6em; /* Opcional: más espacio si se ve apretado */
   }
 }
 @media (max-width: 576px) {
