@@ -103,18 +103,18 @@ body {
     font-size: 14px;
   }
 }
-
+/*
 @media (max-width: 576px) {
   .navbar-nav .nav-link {
     font-size: 20px !important;   /* Texto más grande en menú */
-    padding: 0.6rem 1rem !important; /* Más espacio para facilitar toque */
-  }
+   /* padding: 0.6rem 1rem !important; /* Más espacio para facilitar toque */
+  /*}
 
-  .info-box h5 {
+/*  .info-box h5 {
     font-size: 22px !important;    /* Titulos de cuadros más grandes */
-  }
+ /* }
 
-  .info-box p {
+ /* .info-box p {
     font-size: 16px !important;    /* Texto de párrafos más legible */
-  }
+ /* }
 }
