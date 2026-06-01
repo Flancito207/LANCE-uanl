@@ -111,6 +111,12 @@ body {
   }
 }
 
+/* Secciones con fondo blanco */
+.seccion-blanca {
+  max-width: 1000px;
+  margin: 2em auto;
+  padding: 1em;
+}
 
 .grid-posters {
   display: grid;
