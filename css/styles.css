@@ -125,13 +125,14 @@ body {
   margin-top: 1.5em;
 }
 
-.poster-card {
+/*.poster-card {
   background-color: #e6f0fa;
   border-radius: 8px;
   padding: 1em;
   text-align: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+  */
 
 .poster-card iframe {
   border: none;
@@ -140,12 +141,13 @@ body {
   background-color: #fff;
 }
 
-.poster-card h4 {
+/*.poster-card h4 {
   margin: 0.5em 0;
   color: #003366;
 }
+*/
 
-.poster-card .boton {
+/*.poster-card .boton {
   display: inline-block;
   margin-top: 0.5em;
   padding: 0.5em 1em;
@@ -155,19 +157,60 @@ body {
   text-decoration: none;
   transition: background-color 0.3s;
 }
+*/
 
 .poster-card .boton:hover {
   background-color: #0055aa;
 }
 
-.poster-thumb {
+/*.poster-thumb {
   width: 100%;
   height: 400px;
-  object-fit: cover; /* ajusta para que llene el espacio */
+  object-fit: cover; 
   border-radius: 4px;
   background-color: #fff;
 }
+*/
 
+/* 1. El botón "Ver / Descargar" necesita más padding y border-radius más grande */
+.poster-card .boton {
+  display: inline-block;
+  margin-top: 0.5em;
+  padding: 0.75em 2em;          /* más ancho y alto que el 0.5em 1em actual */
+  background-color: #003366;
+  color: white;
+  border-radius: 8px;           /* más redondeado que 4px */
+  text-decoration: none;
+  font-weight: 600;             /* texto en negrita */
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+/* 2. La tarjeta necesita más padding interno y sombra más pronunciada */
+.poster-card {
+  background-color: #e6f0fa;
+  border-radius: 12px;          /* más redondeado que 8px */
+  padding: 1.2em;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  /* sombra más visible */
+}
+
+/* 3. El título h4 debajo de la imagen necesita más margen */
+.poster-card h4 {
+  margin: 0.6em 0 0.4em 0;
+  color: #003366;
+  font-size: 1.1rem;
+}
+
+/* 4. La imagen/iframe debe tener altura fija similar a la foto */
+.poster-thumb {
+  width: 100%;
+  height: 380px;                /* ajusta según tus imágenes */
+  object-fit: cover;
+  object-position: top;        /* muestra la parte superior del póster */
+  border-radius: 6px;
+  background-color: #fff;
+}
 
 
 /*
